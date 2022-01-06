@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    border: 5px solid black;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+.img {
+    borders: 1px solid black;
+    width: auto;
+    height: 100px;
+}
+.fish-collection-box {
+    border: 1px solid black;
+    padding: 10px;
+}
+.fish-collection-container {
+
+}
+.fish-container {
+
+}
+.fish-container-info {
+
+}
+.travel-tips-box {
+
+}
+.travel-tips-container {
+
+}
+.locations-container {
+
+}
+.locations-container-info {
+
+}
+.tank-maintenance-box {
+
+}
+.martins-tips {
+
+}
+.tank-maintenance-info {
+
+}
