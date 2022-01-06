@@ -1,50 +1,62 @@
 h1 {
     text-align: center;
+    display: block;
+    font-size: 3em;
+    margin-top: 0.67em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 h2 {
     text-align: center;
     border: 5px solid black;
 }
-.main {
+main {
     display: flex;
     justify-content: space-around;
 }
-.img {
+img {
     borders: 1px solid black;
     width: auto;
     height: 100px;
 }
-.fish-collection-box {
+.columns {
     border: 1px solid black;
     padding: 10px;
 }
-.fish-collection-container {
-
-}
-.fish-container {
-
-}
-.fish-container-info {
-
+.test {
+    display: flex;
+    justify-content: space-evenly;
 }
 .travel-tips-box {
-
-}
-.travel-tips-container {
-
-}
-.locations-container {
-
-}
-.locations-container-info {
-
+    border: 1px solid black;
+    padding: 10px;
 }
 .tank-maintenance-box {
-
+    border: 1px solid black;
+}
+.fish-collection-container {
+    border: 1px solid black;
+}
+.fish-container {
+    border: 1px solid black;
+}
+.fish-container-info {
+    border: 1px solid black;
+}
+.travel-tips-container {
+    border: 1px solid black;
+}
+.locations-container {
+    border: 1px solid black;
+}
+.locations-container-info {
+    border: 1px solid black;
 }
 .martins-tips {
-
+    border: 1px solid black;
 }
 .tank-maintenance-info {
-
+    border: 1px solid black;
 }
