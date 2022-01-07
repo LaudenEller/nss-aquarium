@@ -37,10 +37,7 @@ main {
 .fish-column {
     border: 1px solid black;
     padding: 2em;
-    width: 7;
-}
-.fish-collection-container {
-    border: 1px solid black;
+    flex: 2;
 }
 .fish-container {
     border: 1px solid black;
@@ -49,24 +46,26 @@ main {
 .fish-container-info {
     width: 17em;
 }
-.travel-column{
+.location-column{
     border: 1px solid black;
     padding: 2em;
-    width: 5;
+    flex: 2;
 }
-.travel-tips-container {
-    height: 25%;
+.location-container {
+    width: max-content;
+    display: flex;
+    margin-right: 20px;
 }
-.locations-container {
-    width: 17em;
+.location-image {
+    margin-right: 2px;
 }
 .locations-container-info {
-    height: 25%;
+border: 1px solid black;
 }
 .maintenance-column{
     border: 1px solid black;
     padding: 2em;
-    width: 1;
+    flex: 1;
 }
 .martins-tips {
     border: 1px solid black;
@@ -74,10 +73,6 @@ main {
 .tank-maintenance-info {
     border: 1px solid black;
 }
-.quote-box {
-    border: 1px solid black;
-    height: 25%;
-}
-* {
-    border: 1px dashed goldenrod;
-}
+.checked {
+    color: orange;
+  }
