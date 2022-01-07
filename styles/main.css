@@ -24,6 +24,7 @@ img {
 .columns {
     border: 1px solid black;
     padding: 10px;
+    width: 400px;
 }
 .test {
     display: flex;
@@ -41,9 +42,11 @@ img {
 }
 .fish-container {
     border: 1px solid black;
+    display: flex;
 }
 .fish-container-info {
     border: 1px solid black;
+    width: fit-content;
 }
 .travel-tips-container {
     border: 1px solid black;
