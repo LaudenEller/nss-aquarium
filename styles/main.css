@@ -10,32 +10,34 @@ h1 {
 }
 h2 {
     text-align: center;
-    border: 5px solid black;
-}
-main {
-    display: flex;
-    justify-content: space-around;
+    border: 1px solid black;
 }
 img {
     borders: 1px solid black;
     width: auto;
     height: 100px;
 }
+body {
+    background-image: linear-gradient(rgb(0, 255, 234, .75), rgb(0, 255, 200, .5), rgb(0, 255, 128, .25));
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+   }
+main {
+    display: flex;
+    justify-content: space-around;
+}
 .columns {
     border: 1px solid black;
     padding: 10px;
-    width: 400px;
+    width: 28%;
 }
-.test {
-    display: flex;
-    justify-content: space-evenly;
-}
-.travel-tips-box {
+.fish-column {
     border: 1px solid black;
-    padding: 10px;
-}
-.tank-maintenance-box {
-    border: 1px solid black;
+    padding: 2em;
+    width: 7;
 }
 .fish-collection-container {
     border: 1px solid black;
@@ -45,17 +47,26 @@ img {
     display: flex;
 }
 .fish-container-info {
-    border: 1px solid black;
     width: 17em;
 }
-.travel-tips-container {
+.travel-column{
     border: 1px solid black;
+    padding: 2em;
+    width: 5;
+}
+.travel-tips-container {
+    height: 25%;
 }
 .locations-container {
-    border: 1px solid black;
+    width: 17em;
 }
 .locations-container-info {
+    height: 25%;
+}
+.maintenance-column{
     border: 1px solid black;
+    padding: 2em;
+    width: 1;
 }
 .martins-tips {
     border: 1px solid black;
@@ -65,4 +76,8 @@ img {
 }
 .quote-box {
     border: 1px solid black;
+    height: 25%;
+}
+* {
+    border: 1px dashed goldenrod;
 }
