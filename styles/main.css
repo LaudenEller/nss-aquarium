@@ -12,6 +12,9 @@ h2 {
     text-align: center;
     border: 1px solid black;
 }
+h3 {
+    text-align: center;
+}
 img {
     borders: 1px solid black;
     width: auto;
@@ -24,7 +27,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-   }
+}
 main {
     display: flex;
     justify-content: space-around;
@@ -37,7 +40,7 @@ main {
 .fish-column {
     border: 1px solid black;
     padding: 2em;
-    flex: 2;
+    flex: 1.75;
 }
 .fish-container {
     border: 1px solid black;
@@ -49,7 +52,7 @@ main {
 .location-column{
     border: 1px solid black;
     padding: 2em;
-    flex: 2;
+    flex: 1.75;
 }
 .location-container {
     width: max-content;
