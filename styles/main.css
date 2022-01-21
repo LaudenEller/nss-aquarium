@@ -16,7 +16,7 @@ h3 {
     text-align: center;
 }
 img {
-    borders: 1px solid black;
+    border: 1px solid black;
     width: auto;
     height: 100px;
 }
@@ -39,16 +39,25 @@ main {
 }
 .fish-column {
     border: 1px solid black;
-    padding: 2em;
+    padding: 20px;
     flex: 1.75;
 }
-.fish-container {
+
+.fishList {
     border: 1px solid black;
+    flex-direction: column;
+}
+
+.fish__card {
     display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
+    border: 1px solid black;
+    width: auto;
 }
-.fish-container-info {
-    width: 17em;
-}
+
 .location-column{
     border: 1px solid black;
     padding: 2em;
@@ -78,4 +87,4 @@ border: 1px solid black;
 }
 .checked {
     color: orange;
-  }
+}
