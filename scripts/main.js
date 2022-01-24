@@ -1,4 +1,4 @@
-import { getFish } from './databse.js'
+import { getFish, getLocation, getMartinsTips } from './databse.js'
 
 const allFish = getFish()
 
@@ -7,7 +7,7 @@ for (const fish of allFish) {
 }
 
 // Import the FishList function from the correct module
-import { FishList } from './FishList.js'
+import { FishList, locationList } from './FishList.js'
 
 /*
     What is the CSS selector for the element where you
@@ -16,7 +16,41 @@ import { FishList } from './FishList.js'
     Use . for elements with a "class" attribute
     Use # for elements with an "id" attribute
  */
-const parentHTMLElement = document.querySelector(".fish-column")
+const fishParentHTMLElement = document.querySelector(".fish-column")
 
 
-parentHTMLElement.innerHTML = FishList()
+fishParentHTMLElement.innerHTML = FishList()
+
+// import { getLocation } from './databse.js'
+
+const allLocations = getLocation()
+
+for (const location of allLocations) {
+    console.log(location)
+}
+
+const locationParentHTMLElement = document.querySelector(".location-column")
+
+
+locationParentHTMLElement.innerHTML = locationList()
+
+
+
+// import { getMartinsTips } from './databse.js'
+
+// const allMartinsTips = getMartinsTips()
+
+// for (const martinsTips of allMartinsTips) {
+//     console.log(martinsTips)
+// }
+// import { martinsTipsList } from './FishList.js'
+
+// const locationParentHTMLElement = document.querySelector(".maintenance-column")
+
+
+// locationParentHTMLElement.innerHTML = martinsTipsList()
+
+
+
+
+

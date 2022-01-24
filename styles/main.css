@@ -21,7 +21,7 @@ img {
     height: 100px;
 }
 body {
-    background-image: linear-gradient(rgb(0, 255, 234, .75), rgb(0, 255, 200, .5), rgb(0, 255, 128, .25));
+    background-image: linear-gradient(rgba(185, 236, 232, 0.75), rgb(0, 255, 200, .5), rgb(0, 255, 128, .25));
     background-repeat: no-repeat;
     object-fit: fill;
     background-attachment: fixed;
@@ -32,11 +32,11 @@ main {
     display: flex;
     justify-content: space-around;
 }
-.columns {
+/* .columns {
     border: 1px solid black;
     padding: 10px;
     width: 28%;
-}
+} */
 .fish-column {
     border: 1px solid black;
     padding: 20px;
@@ -55,7 +55,6 @@ main {
     row-gap: 10px;
     column-gap: 20px;;
     border: 1px solid black;
-    width: auto;
 }
 
 .location-column{
@@ -63,7 +62,22 @@ main {
     padding: 2em;
     flex: 1.75;
 }
-.location-container {
+
+.locationList {
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.location__card {
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
+    border: 1px solid black;
+}
+
+/* .location-container {
     width: max-content;
     display: flex;
     margin-right: 20px;
@@ -72,16 +86,30 @@ main {
     margin-right: 2px;
 }
 .locations-container-info {
-border: 1px solid black;
-}
+    border: 1px solid black;
+} */
 .maintenance-column{
     border: 1px solid black;
     padding: 2em;
     flex: 1;
 }
-.martins-tips {
+
+.tipsList {
+    border: 1px solid black;
+    flex-direction: column;
+    
+}
+.tips__card {
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
     border: 1px solid black;
 }
+/* .martins-tips {
+    border: 1px solid black;
+} */
 .tank-maintenance-info {
     border: 1px solid black;
 }
