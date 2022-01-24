@@ -1,13 +1,24 @@
-import { getFish, getLocation, getMartinsTips } from './databse.js'
+import { getFish, getMartinsTips, getHolyFish, getSoldierFish, getRegularFish, getLocation, } from './databse.js'
 
-const allFish = getFish()
+const holyFish = getHolyFish(getFish)
 
-for (const fish of allFish) {
+for (const fish of holyFish) {
     console.log(fish)
 }
 
+const soldierFish = getSoldierFish(getFish)
+
+for (const fish of soldierFish) {
+    console.log(fish)
+}
+
+const regularFish = getRegularFish(getFish)
+
+for (const fish of regularFish) {
+    console.log(fish)
+}
 // Import the FishList function from the correct module
-import { FishList, locationList } from './FishList.js'
+import { holyFishList, soldierFishList, regularFishList, locationList, martinsTipsList } from './FishList.js'
 
 /*
     What is the CSS selector for the element where you
@@ -16,13 +27,23 @@ import { FishList, locationList } from './FishList.js'
     Use . for elements with a "class" attribute
     Use # for elements with an "id" attribute
  */
-const fishParentHTMLElement = document.querySelector(".fish-column")
+const holyFishParentHTMLElement = document.querySelector(".holy-fish-column")
 
 
-fishParentHTMLElement.innerHTML = FishList()
+holyFishParentHTMLElement.innerHTML = holyFishList()
 
-// import { getLocation } from './databse.js'
+const soldierFishParentHTMLElement = document.querySelector(".soldier-fish-column")
 
+
+soldierFishParentHTMLElement.innerHTML = soldierFishList()
+
+const regularFishParentHTMLElement = document.querySelector(".regular-fish-column")
+
+
+regularFishParentHTMLElement.innerHTML = regularFishList()
+
+
+// print locations to location column
 const allLocations = getLocation()
 
 for (const location of allLocations) {
@@ -35,22 +56,14 @@ const locationParentHTMLElement = document.querySelector(".location-column")
 locationParentHTMLElement.innerHTML = locationList()
 
 
+// print martins tips to maintenance column
+const allMartinsTips = getMartinsTips()
 
-// import { getMartinsTips } from './databse.js'
+for (const martinsTips of allMartinsTips) {
+    console.log(martinsTips)
+}
 
-// const allMartinsTips = getMartinsTips()
-
-// for (const martinsTips of allMartinsTips) {
-//     console.log(martinsTips)
-// }
-// import { martinsTipsList } from './FishList.js'
-
-// const locationParentHTMLElement = document.querySelector(".maintenance-column")
+const maintenanceParentHTMLElement = document.querySelector(".maintenance-column")
 
 
-// locationParentHTMLElement.innerHTML = martinsTipsList()
-
-
-
-
-
+maintenanceParentHTMLElement.innerHTML = martinsTipsList()
