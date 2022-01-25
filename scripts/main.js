@@ -1,5 +1,8 @@
 import { getFish, getMartinsTips, getHolyFish, getSoldierFish, getRegularFish, getLocation, } from './databse.js'
 
+// Import the FishList function from the correct module
+import { holyFishList, soldierFishList, regularFishList, locationList, martinsTipsList } from './FishList.js'
+
 const holyFish = getHolyFish(getFish)
 
 for (const fish of holyFish) {
@@ -17,8 +20,6 @@ const regularFish = getRegularFish(getFish)
 for (const fish of regularFish) {
     console.log(fish)
 }
-// Import the FishList function from the correct module
-import { holyFishList, soldierFishList, regularFishList, locationList, martinsTipsList } from './FishList.js'
 
 /*
     What is the CSS selector for the element where you
@@ -27,18 +28,16 @@ import { holyFishList, soldierFishList, regularFishList, locationList, martinsTi
     Use . for elements with a "class" attribute
     Use # for elements with an "id" attribute
  */
-const holyFishParentHTMLElement = document.querySelector(".holy-fish-column")
-
+const holyFishParentHTMLElement = document.querySelector(".holy-fish-container")
 
 holyFishParentHTMLElement.innerHTML = holyFishList()
 
-const soldierFishParentHTMLElement = document.querySelector(".soldier-fish-column")
+const soldierFishParentHTMLElement = document.querySelector(".soldier-fish-container")
 
 
 soldierFishParentHTMLElement.innerHTML = soldierFishList()
 
-const regularFishParentHTMLElement = document.querySelector(".regular-fish-column")
-
+const regularFishParentHTMLElement = document.querySelector(".regular-fish-container")
 
 regularFishParentHTMLElement.innerHTML = regularFishList()
 
@@ -54,6 +53,7 @@ const locationParentHTMLElement = document.querySelector(".location-column")
 
 
 locationParentHTMLElement.innerHTML = locationList()
+
 
 
 // print martins tips to maintenance column

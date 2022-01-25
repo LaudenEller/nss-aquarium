@@ -38,17 +38,46 @@ main {
     width: 28%;
 } */
 .fish-column {
+    /* display: flex; */
     border: 1px solid black;
     padding: 20px;
     flex: 1.75;
 }
 
-.fishList {
+.holyfishList {
     border: 1px solid black;
     flex-direction: column;
 }
 
-.fish__card {
+.soldierfishList {
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.regularfishList {
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.holy__fish__card {
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
+    border: 1px solid black;
+}
+
+.soldier__fish__card {
+    display: flex;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;;
+    border: 1px solid black;
+}
+
+.regular__fish__card {
     display: flex;
     gap: 10px;
     gap: 10px 20px;
