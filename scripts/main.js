@@ -3,23 +3,19 @@ import { getFish, getMartinsTips, getHolyFish, getSoldierFish, getRegularFish, g
 // Import the FishList function from the correct module
 import { holyFishList, soldierFishList, regularFishList, locationList, martinsTipsList } from './FishList.js'
 
-const holyFish = getHolyFish(getFish)
+// const getFishVar = getFish()
+// const holyFish = getHolyFish(getFishVar)
 
-for (const fish of holyFish) {
-    console.log(fish)
-}
+//     console.log(holyFish)
 
-const soldierFish = getSoldierFish(getFish)
+// const soldierFish = getSoldierFish(getFishVar)
 
-for (const fish of soldierFish) {
-    console.log(fish)
-}
+//     console.log(soldierFish)
 
-const regularFish = getRegularFish(getFish)
+// const regularFish = getRegularFish(getFishVar)
 
-for (const fish of regularFish) {
-    console.log(fish)
-}
+//     console.log(regularFish)
+
 
 /*
     What is the CSS selector for the element where you
