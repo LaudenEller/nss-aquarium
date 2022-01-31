@@ -17,13 +17,11 @@ h3 {
 }
 img {
     border: 1px solid black;
-    width: auto;
+    width: 150px;
     height: 100px;
 }
-.image--card {
-    border: 1px solid black;
-    width: auto;
-    height: 100px;
+.image__card {
+    align-self: flex-start;
 }
 body {
     background-image: linear-gradient(rgba(185, 236, 232, 0.75), rgb(0, 255, 200, .5), rgb(0, 255, 128, .25));
@@ -43,7 +41,6 @@ main {
     width: 28%;
 } */
 .fish-column {
-    /* display: flex; */
     border: 1px solid black;
     padding: 20px;
     flex: 1.75;
@@ -64,7 +61,7 @@ main {
     flex-direction: column;
 }
 
-.holy__fish__card {
+.fish__card {
     display: flex;
     gap: 10px;
     gap: 10px 20px;
@@ -73,7 +70,7 @@ main {
     border: 1px solid black;
 }
 
-.soldier__fish__card {
+/* .soldier__fish__card {
     display: flex;
     gap: 10px;
     gap: 10px 20px;
@@ -89,7 +86,7 @@ main {
     row-gap: 10px;
     column-gap: 20px;;
     border: 1px solid black;
-}
+} */
 
 .location-column{
     border: 1px solid black;
@@ -131,7 +128,6 @@ main {
 .tipsList {
     border: 1px solid black;
     flex-direction: column;
-    
 }
 .tips__card {
     /* display: flex; */
